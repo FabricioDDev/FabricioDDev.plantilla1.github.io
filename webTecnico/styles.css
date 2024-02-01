@@ -1,0 +1,124 @@
+/* Import Google font - Poppins */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    padding: 20px;
+}
+aside{
+    position: fixed;
+    right: 10px;
+    bottom:10%;
+    width:50%;
+    height: 50vh;
+}
+
+.chatbot-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .chatbot-header {
+    background-color: #333;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    height: 15%;
+    width:100%;
+    justify-self: flex-start;
+  }
+  
+  .chatbot-messages {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 85%;
+    width: 90%;
+    overflow-y: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .message.user {
+    background-color: #ddd;
+    float: left;
+    clear: both;
+  }
+  
+  .message.bot {
+    background-color: #fafafa;
+    float: right;
+    clear: both;
+  }
+  
+  .chatbot-input {
+    border-top: 1px solid #ccc;
+  }
+  
+  .chatbot-input input {
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .chatbot-input button {
+    margin:5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+/* Estilos para dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        display: none;
+    }
+    .navbar.show {
+        display: flex;
+    }
+  
+}
+@media only screen and (min-width: 600px) {
+    .menu-toggle{
+        display:none;
+    }
+}

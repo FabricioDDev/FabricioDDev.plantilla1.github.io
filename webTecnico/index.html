@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Página Dinámica</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggle" id="mobile-menu">☰ Menú</div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Bienvenido a nuestra página</h1>
+            <p>Esta es una página dinámica con un menú desplegable y es responsive.</p>
+        </section>
+    </main>
+
+    <aside>
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h1>Chatbot</h1>
+            </div>
+            <div class="chatbot-messages">
+                <div class="message user">
+                    <p class="p" id="p">Hola, ¿cómo puedo ayudarte?</p>
+                </div>
+                <div class="message bot">
+                    Opciones:
+                    <button id="button1" onclick="choiceAction1()">Consultar estado de mi revisión</button>
+                    <button id="button2" onclick="choiceAction2()">Otra consulta</button>
+                </div>
+                <div class="chatbot-input" id="chatbot-input" style="display: none;">
+                    <input type="text" id="inputCode" placeholder="Escribe tu mensaje aquí...">
+                    <button type="button" onclick="sendCode()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+
+</html>
+
+
+
+
+
