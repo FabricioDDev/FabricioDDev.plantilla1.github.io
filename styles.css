@@ -113,7 +113,7 @@ body {
         }
       .instructions{
         width: 100%;
-        height: 50vh;
+        height: 87vh;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -127,21 +127,37 @@ body {
           flex-flow: column nowrap;
           text-align: center;
           color: white;
+          justify-content: center;
+          align-items: center;
+        }
+        .instructions div img{
+          height: 65%;
+          width: 30%;
+          
         }
       .about{
         width: 100%;
         height: 30vh;
-        background-color: blue;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-content: center;
+        background-color: #000000;
+        opacity: 0.8;
+        background-image: radial-gradient(#ffd700 2px, #000000 2px);
+        background-size: 40px 40px;
         border: solid 1px #ffd700;
+        color:white;
+        text-align: center;
+      }
+      .about div{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.815);
       }
       .comments{
         width: 100%;
-        height: 70vh;
-        background-color: rgb(87, 87, 114);
+        height: 90vh;
+        background-color: rgb(0, 0, 0);
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
@@ -150,16 +166,25 @@ body {
       }
         h5{
           font-size: 1.5em;
+          color: white;
         }
         .comment{
           width: 100%;
-          background-color: blue;
+          padding: 5%;
+          background-color: rgb(216, 216, 216);
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
-          align-content: center;
-          color:white;
-          text-align: center;
+          align-items: center;
+        background-color: #ffffff;
+        border: solid 1px #ffd700;
+        color:rgb(0, 0, 0);
+        text-align: center;
+        }
+        .comment img{
+          height: 50%;
+          width: 30%;
+          border-radius: 300px;
         }
         .star-rating {
           font-size: 0;
@@ -189,6 +214,7 @@ body {
         align-items: center;
         width: 100%;
         height: 40vh;
+        color:white
       }
         h6{
           font-size: 1.5em;
@@ -204,6 +230,7 @@ body {
         width: 100%;
         height: 30vh;
         text-align: center;
+        color: white;
       }
   aside{
     position: fixed;
@@ -280,6 +307,9 @@ body {
       border-radius: 5px;
       background-color: #333;
       color: #fff;
+    }
+    footer{
+      color: white;
     }
     
   /* Estilos para dispositivos pequeños */
